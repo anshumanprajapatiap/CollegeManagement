@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    {% if sdata.image %}
+<img src="{{ sdata.image.url }}" height="200" width="200">
+{% else %}
+<h5>No Image</h5>
+{% endif %}
+<h1>Student Detail of {{ sdata.name }}</h1>
+<h2>Mobile: {{ sdata.mobile }}</h2>
+<h3>College Name: {{ sdata.clg.cname }}</h3>
+<a href="{% url 'delete' sdata.id 'Student' %}"><button>Delete</button></a>
+<a href="{% url 'edit_s' sdata.id  %}"><button>Edit</button></a>
+</center>
+
+
+</body>
+</html>

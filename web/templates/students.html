@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><br><br><br><br><br><br>
+    <h1>List Of Students</h1>
+{% for i in all_student %}
+<li><a href="{% url 'sdetail' i.id %}">{{ i.name }}</a></li><br>
+{% endfor %}
+{% if request.user.is_staff %}
+    <br><br><br><br>
+<a href="{% url 'add_s' %}"><button>Add Student</button></a><br><br><br><br><br><br><br><br>
+{% endif %}
+    <br><br><br><br>
+<a href="{% url 'button' %}"><button>Back</button></a>
+
+</center>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><br<br><br><br><br><br<br><br><br><br>
+    <h1>Welcome,{{ request.user.first_name }}</h1>
+ <h3><br<br><br><br><br>
+      <a href="{% url 'all_s' %}"><button>all Student</button></a>
+      <a href="{% url 'all_c' %}"><button>all College</button></a><br<br><br><br><br>
+      <a href="{% url 'logout' %}"><button>Logout</button></a>
+ </h3>
+
+</center>
+
+
+</body>
+</html>

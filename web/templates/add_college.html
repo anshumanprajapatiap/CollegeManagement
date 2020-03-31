@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<h1>Add New College</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+       Name: <input type="text" placeholder="Enter College Name" name="clg_name"><br><br>
+        Director Name:<input type="text" placeholder="Director Name" name="dname" ><br><br>
+       City Name:<input type="text" placeholder="City Name" name="city"><br><br>
+       Contact no:<input type="number" placeholder="Contact no. "  name="cn"><br><br>
+       Code:<input type="number" placeholder="College Code"  name="code"><br><br>
+
+        <input type="submit" value="Add College">
+    </form>
+    </center>
+</body>
+</html>

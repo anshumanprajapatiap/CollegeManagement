@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logi Form</title>
+</head>
+<body>
+<center>
+    <h1>SignUp Form</h1>
+    {% if error %}
+    <script>
+        alert("This Username is already exists")
+    </script>
+   {% endif %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h4>Username: <input type="text" placeholder="Enter Username"
+                        name="uname">
+        <br><br>
+        Password: <input type="password" placeholder="Enter Password"
+                         name="pwd">
+        Email: <input type="email" placeholder="Enter Email"
+                        name="em">
+        <br><br>
+        First name: <input type="text" placeholder="Enter First Name"
+                         name="fname">
+        <br><br>
+        Last name: <input type="text" placeholder="Enter Last Name"
+                         name="lname">
+        <br><br></h4>
+        <input type="submit" value="Signup">
+    </form>
+
+</center>
+</body>
+</html>

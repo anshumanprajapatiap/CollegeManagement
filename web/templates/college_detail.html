@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Detail of {{ cdata.cname }}</h1>
+<h2>List of students</h2>
+{% for i in cdata.student_set.all %}
+<li>{{ i.name }}</li>
+{% endfor %}
+<a href="{% url 'delete' cdata.id 'College' %}"><button>Delete</button></a>
+
+</body>
+</html>

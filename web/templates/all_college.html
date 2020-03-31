@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>List Of College</h1>
+{% for i in all_college %}
+<li><a href="{% url 'cdetail' i.id %}">{{ i.cname }}</a></li>
+{% endfor %}
+    <br><br><br><br><br><br><br><br>
+<a href="{% url 'button' %}"><button>Back</button></a>
+<a href="{% url 'add_c' %}"><button>Add College</button></a>
+</center>
+
+</body>
+</html>

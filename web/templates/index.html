@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is First Heading</h1>
+<h2>This is Second Heading</h2>
+
+{% for i,j in data %}
+<h3>{{forloop.counter}}. {{i}} -- {{ j }}</h3>
+
+{% endfor %}
+
+
+</body>
+</html>
